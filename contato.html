@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fotos/rodar brasil.png" type="image/x-icon">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="logotipo">
+            <img src="fotos/rodar brasil.png" alt="logotipo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="express.html">Express</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu-burguer">
+            <!-- <a href="https://www.flaticon.com/free-icons/drawer" title="drawer icons">Drawer icons created by Boris farias - Flaticon</a> -->
+            <img src="fotos/menu burguer.png" alt="menu-burguer">
+        </div>
+    </header>
+    <h1>
+        Fale conosco
+    </h1>
+    <legend>Dados pessoais</legend>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <div id="form">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" autocomplete="username" required>
+            </div>
+            <div id="form">
+                <label for="email">E-mail: </label>
+                <input type="email" name="Email" id="email" autocomplete="email" required>
+            </div>
+            <div id="form">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" autocomplete="tel" pattern="!\(\d{2}\)\d{4,5}--\d{4}$"
+                    required placeholder="(xx)xxxxx-xxxx">
+            </div>
+            <div id="form">
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpar">
+            </div>
+        </fieldset>
+    </form>
+    <p> Endereço: R. Erasmo Braga, 6B - Pres. Altino, Osasco - SP, 06097-095 </p>
+    <p> cnpj: 35.813.055.0001-03</p>
+    <footer id="redes-sociais">
+        <a href=""></a><img src="fotos/logo-facebook.jpg" alt="facebook">
+        <a href=""></a> <img src="fotos/logo-instagram.jpg" alt="instagram">
+        <a href=""></a> <img src="fotos/logo-youtube.jpg" alt="youtube">
+        <a href="https://wa.me/5511962875402" target="_blank"><img src="fotos/logo-whatssap.jpg" alt="WhatsApp" /></a>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+
+</html>
